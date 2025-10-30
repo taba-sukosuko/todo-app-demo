@@ -13,7 +13,7 @@ FastAPIを使用した簡易ToDo管理REST APIの実装。インメモリでデ�
 
 | 技術 | バージョン | 用途 |
 |------|-----------|------|
-| Python | 3.10以上 | プログラミング言語 |
+| Python | 3.13以上 | プログラミング言語 |
 | uv | 最新 | Pythonパッケージ・プロジェクトマネージャー |
 | FastAPI | 0.115.0以上 | Webフレームワーク |
 | Pydantic | 2.0以上 | データバリデーション |
@@ -330,8 +330,8 @@ cd todo-app-demo
 # uvでプロジェクトを初期化
 uv init
 
-# Pythonバージョンを指定（3.10以上）
-echo "3.10" > .python-version
+# Pythonバージョンを指定（3.13以上）
+echo "3.13" > .python-version
 ```
 
 #### 3. 依存関係の追加
@@ -397,7 +397,7 @@ Python標準の除外ルール + uv関連ファイル
 
 ### 9.1 Pythonバージョン固有の機能
 - Union型のショートハンド記法（`str | None`）を使用
-- Python 3.10以上が必須
+- Python 3.13以上が必須
 
 ### 9.2 Pydantic v2 の特徴
 - `@field_validator` デコレータの使用（v1の `@validator` から変更）
